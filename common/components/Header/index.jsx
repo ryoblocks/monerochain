@@ -30,7 +30,7 @@ function handleBadSearch(text = "No results found :(") {
 
 
 function makeThenSetSelectedNodeAndNodeOptions() {
-    const defaultNodeOption = "http://explorer.xmr.my"
+    const defaultNodeOption = "https://explorer.ryoblocks.com"
     store.set('nodeSettings', {
         nodeOptions: [defaultNodeOption],
         selectedNode: defaultNodeOption
@@ -146,13 +146,13 @@ export default class Header extends Component {
         return (
             <div>
                 <GHeader style={{
-                    backgroundColor: 'orange',
+                    backgroundColor: '#3299d3',
                     paddingLeft: '2.3em',
                     paddingRight: '2.3em',
                 }} fixed={false}>
                     <Link to="/" style={{color: 'black', textDecoration: 'none'}}>
                         <Title style="">
-                            MoneroChain<div style={{color: 'white'}}>beta</div>
+                            RyoChain<div style={{color: 'white'}}>beta</div>
                         </Title>
                     </Link>
                     <Box flex={true}

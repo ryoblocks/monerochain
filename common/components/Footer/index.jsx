@@ -17,9 +17,10 @@ export default class Footer extends Component {
                     <Box direction='row'
                          pad={{"between": "medium"}}>
                         <Paragraph margin='none'>
+                            © 2018 Ryoblocks<br/>
                             © 2017 MoneroChain
                         </Paragraph>
-                        <a href="https://github.com/dternyak/monerochain.git" target="_blank">
+                        <a href="https://github.com/ryoblocks/ryochain" target="_blank">
                             <i className="fa fa-github" aria-hidden="true"></i> Source on GitHub
                         </a>
                     </Box>

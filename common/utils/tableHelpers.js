@@ -15,7 +15,7 @@ export function formatBytes(a, b) {
 
 
 export const formatFee = (input) => {
-    return parseFloat(String(input / 1000000000000).substring(0, 5))
+    return parseFloat(String(input / 1000000000).substring(0, 5))
 
 }
 
@@ -45,6 +45,8 @@ export const buildColumnFromObject = function (object, keysToExclude = [], custo
                 header: key,
                 accessor: key,
             }
+            if(uniqueKeys[i].hasOwnProperty("header"))
+                toPush.header = uniqueKeys[i].header
 
             if (key in customRender) {
                 Object.keys(customRender[key]).forEach((nestedKey) => {

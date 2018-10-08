@@ -56,6 +56,7 @@ export default class MemPoolComponent extends Component {
                 },
 
                 xmr_outputs: {
+                    header: "outputs",
                     minWidth: 70
                 },
 
@@ -64,6 +65,7 @@ export default class MemPoolComponent extends Component {
                 },
 
                 xmr_inputs: {
+                    header: "inputs",
                     minWidth: 70
                 },
 
@@ -136,5 +138,3 @@ export default class MemPoolComponent extends Component {
         )
     }
 }
-
-
